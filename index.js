@@ -60,14 +60,17 @@ function binaryMatch(sortedArray, missingNum){
 function hashTwoSum(array, sum){
   let matchingSums = [];
   let hashTable = {};
-
+  for(let i=0;i<array.length;i++){
+      hashTable[array[i].toString()] = array[i];
+  }
+  
     for(let i=0;i<array.length;i++){
         let numLookingFor = sum - array[i];
         if (hashTable[numLookingFor.toString()] !== undefined) {
           matchingSums.push([array[i], numLookingFor]);
         }
         // add the current number to the hash table
-        hashTable[array[i].toString()] = array[i];
+        //hashTable[array[i].toString()] = array[i];
     }
     return matchingSums;
 }
