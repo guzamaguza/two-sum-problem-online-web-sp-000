@@ -63,7 +63,7 @@ function hashTwoSum(array, sum){
   for(let i=0;i<array.length;i++){
       hashTable[array[i].toString()] = array[i];
   }
-  
+
     for(let i=0;i<array.length;i++){
         let numLookingFor = sum - array[i];
         if (hashTable[numLookingFor.toString()] !== undefined) {
