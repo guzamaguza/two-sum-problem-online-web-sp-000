@@ -60,11 +60,11 @@ function binaryMatch(sortedArray, missingNum){
 function hashTwoSum(array, sum){
   let matchingSums = [];
   let hashTable = {};
-  //populate the hash table 
+  //populate the hash table
   for(let i=0;i<array.length;i++){
       hashTable[array[i].toString()] = array[i];
   }
-//then iterate through and find where the numLookingFor is found in the hash table 
+//then iterate through and find where the numLookingFor is found in the hash table
     for(let i=0;i<array.length;i++){
         let numLookingFor = sum - array[i];
         if (hashTable[numLookingFor.toString()] !== undefined) {
