@@ -77,6 +77,6 @@ function hashTwoSum(array, sum){
     while(j < matchingSums.length/2){
       matchingSums.pop();
     }
-    
+
     return matchingSums;
 }
