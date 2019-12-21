@@ -29,16 +29,13 @@ function binarySearchTwoSum(array, sum){
 for(let i=0;i<array.length;i++){
   let numLookingFor = sum - array[i];
 
-  if (array[mid] === i) {
+  if (array[mid] === numLookingFor) {
           return array[mid];
-  } else if (array[mid] < i && arr.length > 1) {
-          binarySearchTwoSum(arr.splice(mid, Number.MAX_VALUE), i);
-  } else if (array[mid] > i && arr.length > 1) {
-          binarySearchTwoSum(arr.splice(0, mid), i);
-  } else {
-          console.log('not here', i);
-          return -1;
-  }
+  } else if (array[mid] < numLookingFor) {
+          continue;
+  } else if (array[mid] > numLookingFor) {
+          continue;
+  } 
 }
 
 
