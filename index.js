@@ -10,6 +10,7 @@ function bruteForceTwoSum(array, sum){
   }
 }
 
+
 //collects each pair of numbers with a matching sum
 function binarySearchTwoSum(array, sum){
 
@@ -21,6 +22,7 @@ function binarySearchTwoSum(array, sum){
 function binaryMatch(sortedArray, missingNum){
 
 }
+
 
 //collects each pair of numbers with a matching sum
 function hashTwoSum(array, sum){
