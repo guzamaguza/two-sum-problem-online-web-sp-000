@@ -25,19 +25,21 @@ function bruteForceTwoSum(array, sum){
 //collects each pair of numbers with a matching sum [ O(n log n) ]
 function binarySearchTwoSum(array, sum){
   sortedArray = array.sort();
-  //rootNode = array[round(array.length/2)];
-  for(let i=0; i<array.length; i++){
-    numLookingFor = sum - array[i];
-    let mid = Math.floor((array.length)/2);
-    let pointer;
-    if(array[mid] === numLookingFor){
-             pointer =  mid;
-             break
-    }else if(numbers[mid] < required){
-            start = mid+1;
-    }else{
-            end = mid-1
-    }
+  var mid = Math.floor(array.length / 2);
+for(let i=0;i<array.length;i++){
+  let numLookingFor = sum - array[i];
+
+  if (array[mid] === i) {
+          return array[mid];
+  } else if (array[mid] < i && arr.length > 1) {
+          binarySearchTwoSum(arr.splice(mid, Number.MAX_VALUE), i);
+  } else if (array[mid] > i && arr.length > 1) {
+          binarySearchTwoSum(arr.splice(0, mid), i);
+  } else {
+          console.log('not here', i);
+          return -1;
+  }
+}
 
 
 
