@@ -70,8 +70,12 @@ function hashTwoSum(array, sum){
         if (hashTable[numLookingFor.toString()] !== undefined) {
           matchingSums.push([array[i], numLookingFor]);
         }
-        // add the current number to the hash table
-        //hashTable[array[i].toString()] = array[i];
+
+    }
+    //eliminate duplicates
+    let j = 0;
+    while(j < matchingSums.length/2){
+      matchingSums.pop();
     }
     return matchingSums;
 }
