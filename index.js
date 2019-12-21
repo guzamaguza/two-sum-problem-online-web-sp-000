@@ -53,18 +53,20 @@ function binarySearchTwoSum(array, sum){
 //returns true when a match is found
 function binaryMatch(sortedArray, missingNum){
     let matchingPairs = [];
-    let mid = Math.floor(array.length / 2); //mid = 3
+    let mid = Math.floor(sortedArray.length / 2); //mid = 3
       for(let i=0;i<array.length;i++){
         if (sortedArray[mid] === missingNumber) {
                 let pair = [sortedArray[i], missingNumber];
                 matchingPairs.push(pair);
+                return true
         } else if (sortedArray[mid] < missingNumber) {
                 let pair = [sortedArray[mid+1], missingNumber];
                 matchingPairs.push(pair);
-
+                return true
         } else if (sortedArray[mid] > missingNumber) {
                 let pair = [sortedArray[mid-1], missingNumber];
                 matchingPairs.push(pair);
+                return true
         }
       }
 
