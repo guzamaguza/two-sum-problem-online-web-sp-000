@@ -26,11 +26,11 @@ function bruteForceTwoSum(array, sum){
 function binarySearchTwoSum(array, sum){
   let sortedArray = array.sort();
   let matchingPairs = [];
-  let mid = Math.floor(array.length / 2);
+  let mid = Math.floor(array.length / 2); //mid = 3
     for(let i=0;i<array.length;i++){
       let numLookingFor = sum - sortedArray[i];
 
-      if (sortedArray[i] === numLookingFor) {
+      if (sortedArray[mid] === numLookingFor) {
               let pair = [sortedArray[i], numLookingFor];
               matchingPairs.push(pair);
       } else if (sortedArray[mid] < numLookingFor) {
