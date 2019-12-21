@@ -15,7 +15,9 @@ function bruteForceTwoSum(array, sum){
     }
   }
   lengthOfMP = matchingPairs.length;
-
+  for(let q = 0;q<lengthOfMP/2;q++){
+  matchingPairs.pop(matchingPairs[lengthOfMP - 1])
+   }
   return matchingPairs;
 }
 
