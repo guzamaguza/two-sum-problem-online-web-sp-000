@@ -54,7 +54,7 @@ function binarySearchTwoSum(array, sum){
 function binaryMatch(sortedArray, missingNum){
     let matchingPairs = [];
     let mid = Math.floor(sortedArray.length / 2); //mid = 3
-      for(let i=0;i<array.length;i++){
+      for(let i=0;i<sortedArray.length;i++){
         if (sortedArray[mid] === missingNumber) {
                 let pair = [sortedArray[i], missingNumber];
                 matchingPairs.push(pair);
