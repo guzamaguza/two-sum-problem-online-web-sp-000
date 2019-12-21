@@ -34,10 +34,12 @@ function binarySearchTwoSum(array, sum){
               let pair = [sortedArray[i], numLookingFor];
               matchingPairs.push(pair);
       } else if (sortedArray[mid] < numLookingFor) {
-              i++;
-              continue;
+              let pair = [sortedArray[mid+1], numLookingFor];
+              matchingPairs.push(pair);
+              
       } else if (sortedArray[mid] > numLookingFor) {
-              continue;
+              let pair = [sortedArray[mid-1], numLookingFor];
+              matchingPairs.push(pair);
       }
     }
     return matchingPairs;
