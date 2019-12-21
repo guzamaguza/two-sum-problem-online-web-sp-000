@@ -55,16 +55,16 @@ function binaryMatch(sortedArray, missingNum){
     let matchingPairs = [];
     let mid = Math.floor(sortedArray.length / 2); //mid = 3
       for(let i=0;i<sortedArray.length;i++){
-        if (sortedArray[mid] === missingNumber) {
-                let pair = [sortedArray[i], missingNumber];
+        if (sortedArray[mid] === missingNum) {
+                let pair = [sortedArray[i], missingNum];
                 matchingPairs.push(pair);
                 return true
         } else if (sortedArray[mid] < missingNumber) {
-                let pair = [sortedArray[mid+1], missingNumber];
+                let pair = [sortedArray[mid+1], missingNum];
                 matchingPairs.push(pair);
                 return true
         } else if (sortedArray[mid] > missingNumber) {
-                let pair = [sortedArray[mid-1], missingNumber];
+                let pair = [sortedArray[mid-1], missingNum];
                 matchingPairs.push(pair);
                 return true
         }
