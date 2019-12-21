@@ -35,7 +35,7 @@ for(let i=0;i<array.length;i++){
           continue;
   } else if (array[mid] > numLookingFor) {
           continue;
-  } 
+  }
 }
 
 
