@@ -59,7 +59,7 @@ function binaryMatch(sortedArray, missingNum){
                 let pair = [sortedArray[i], missingNum];
                 matchingPairs.push(pair);
                 return true
-        } else if (sortedArray[mid] < missingNumber) {
+        } else if (sortedArray[mid] < missingNum) {
                 let pair = [sortedArray[mid+1], missingNum];
                 matchingPairs.push(pair);
                 return true
