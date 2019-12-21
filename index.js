@@ -25,7 +25,9 @@ function bruteForceTwoSum(array, sum){
 //collects each pair of numbers with a matching sum
 function binarySearchTwoSum(array, sum){
   sortedArray = array.sort();
-
+  for(let i=0; i<array.length; i++){
+    
+  }
 }
 
 
