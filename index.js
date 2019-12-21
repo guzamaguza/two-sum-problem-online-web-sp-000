@@ -69,9 +69,6 @@ function binaryMatch(sortedArray, missingNum){
                 return true
         }
       }
-
-
-
 }
 
 
