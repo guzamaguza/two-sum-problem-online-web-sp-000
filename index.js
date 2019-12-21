@@ -7,7 +7,7 @@ function bruteForceTwoSum(array, sum){
 
       if(sum === array[i] + array[j]){
         pair = [i,j];
-        matchingPairs.add(pair);
+        matchingPairs.push(pair);
       }
     }
   }
