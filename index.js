@@ -28,14 +28,14 @@ function binarySearchTwoSum(array, sum){
   let matchingPairs = [];
   let mid = Math.floor(array.length / 2);
     for(let i=0;i<array.length;i++){
-      let numLookingFor = sum - array[i];
+      let numLookingFor = sum - sortedArray[i];
 
-      if (array[mid] === numLookingFor) {
-              let pair = [array[i], numLookingFor];
+      if (sortedArray[mid] === numLookingFor) {
+              let pair = [sortedArray[i], numLookingFor];
               matchingPairs.push(pair);
-      } else if (array[mid] < numLookingFor) {
+      } else if (sortedArray[mid] < numLookingFor) {
               continue;
-      } else if (array[mid] > numLookingFor) {
+      } else if (sortedArray[mid] > numLookingFor) {
               continue;
       }
     }
