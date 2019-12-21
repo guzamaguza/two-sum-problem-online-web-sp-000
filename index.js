@@ -2,7 +2,7 @@
 function bruteForceTwoSum(array, sum){
   let pair = [];
   let matchingPairs = [];
-  let sum_it;
+  let sum_it = 0;
   for(let i=0; i<array.length; i++){
     for(let j=0; j<array.length; j++){
         sum_it = array[i] + array[j]
