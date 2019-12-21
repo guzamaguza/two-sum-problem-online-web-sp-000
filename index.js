@@ -1,4 +1,4 @@
-//collects each pair of numbers with a matching sum
+//collects each pair of numbers with a matching sum [Time complexity : O(n²)]
 function bruteForceTwoSum(array, sum){
   let pair = [];
   let matchingPairs = [];
@@ -22,7 +22,7 @@ function bruteForceTwoSum(array, sum){
 }
 
 
-//collects each pair of numbers with a matching sum
+//collects each pair of numbers with a matching sum [ O(n log n) ]
 function binarySearchTwoSum(array, sum){
   sortedArray = array.sort();
   //rootNode = array[round(array.length/2)];
