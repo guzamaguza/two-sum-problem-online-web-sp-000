@@ -1,7 +1,7 @@
 //collects each pair of numbers with a matching sum
 function bruteForceTwoSum(array, sum){
-  pair = [];
-  matchingPairs =[];
+  var = pair = [];
+  var = matchingPairs =[];
   for(let i=0;i<array.length; i++){
     for(let j=0;j<array.length;j++){
 
