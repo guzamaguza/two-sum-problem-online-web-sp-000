@@ -40,12 +40,12 @@ function binarySearchTwoSum(array, sum){
     }
 
 
-    
+
     if(numLookingFor > array[i]){
     pair = [array[i],array[j]];
     matchingPairs.push(pair);
     }else if(numLookingFor < array[i]){
-    
+
     }
   }
 }
