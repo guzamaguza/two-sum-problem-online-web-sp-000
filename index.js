@@ -39,6 +39,7 @@ function binarySearchTwoSum(array, sum){
               continue;
       }
     }
+    return matchingPairs;
 }
 
 
