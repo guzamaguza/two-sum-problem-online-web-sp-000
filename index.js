@@ -42,6 +42,10 @@ function binarySearchTwoSum(array, sum){
               matchingPairs.push(pair);
       }
     }
+    matchingPairs.pop();
+    matchingPairs.pop();
+    matchingPairs.pop();
+    matchingPairs.pop();
     return matchingPairs;
 }
 
