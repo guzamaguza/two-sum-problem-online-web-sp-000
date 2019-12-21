@@ -67,5 +67,5 @@ function hashTwoSum(array, sum){
           matchingSums.push([array[i], numLookingFor]);
         }
     }
-
+    return matchingSums;
 }
