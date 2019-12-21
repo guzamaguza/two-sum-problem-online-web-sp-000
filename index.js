@@ -30,10 +30,11 @@ function binarySearchTwoSum(array, sum){
     for(let i=0;i<array.length;i++){
       let numLookingFor = sum - sortedArray[i];
 
-      if (sortedArray[mid] === numLookingFor) {
+      if (sortedArray[i] === numLookingFor) {
               let pair = [sortedArray[i], numLookingFor];
               matchingPairs.push(pair);
       } else if (sortedArray[mid] < numLookingFor) {
+              i++;
               continue;
       } else if (sortedArray[mid] > numLookingFor) {
               continue;
