@@ -74,8 +74,9 @@ function hashTwoSum(array, sum){
     }
     //eliminate duplicates
     let j = 0;
-    while(j < matchingSums.length/2){
+    while(j < (matchingSums.length/2)){
       matchingSums.pop();
+      j++;
     }
 
     return matchingSums;
