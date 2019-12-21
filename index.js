@@ -26,27 +26,17 @@ function bruteForceTwoSum(array, sum){
 function binarySearchTwoSum(array, sum){
   sortedArray = array.sort();
   var mid = Math.floor(array.length / 2);
-for(let i=0;i<array.length;i++){
-  let numLookingFor = sum - array[i];
+    for(let i=0;i<array.length;i++){
+      let numLookingFor = sum - array[i];
 
-  if (array[mid] === numLookingFor) {
-          return array[mid];
-  } else if (array[mid] < numLookingFor) {
-          continue;
-  } else if (array[mid] > numLookingFor) {
-          continue;
-  }
-}
-
-
-
-    if(numLookingFor > array[i]){
-    pair = [array[i],array[j]];
-    matchingPairs.push(pair);
-    }else if(numLookingFor < array[i]){
-
+      if (array[mid] === numLookingFor) {
+              return array[mid];
+      } else if (array[mid] < numLookingFor) {
+              continue;
+      } else if (array[mid] > numLookingFor) {
+              continue;
+      }
     }
-  }
 }
 
 
