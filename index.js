@@ -53,12 +53,19 @@ function binarySearchTwoSum(array, sum){
 //returns true when a match is found
 function binaryMatch(sortedArray, missingNum){
 
-
 }
 
 
 //collects each pair of numbers with a matching sum
 function hashTwoSum(array, sum){
+  let matchingSums = [];
+  let hashTable = {};
 
+    for(let i=0;i<array.length;i++){
+        let numLookingFor = sum - sortedArray[i];
+        if (hashTable[numLookingFor.toString()] !== undefined) { 
+          matchingSums.push([array[i], numLookingFor]);
+        }
+    }
 
 }
