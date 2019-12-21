@@ -11,7 +11,7 @@ function bruteForceTwoSum(array, sum){
       }
     }
   }
-  return matchingpairs;
+  return matchingPairs;
 }
 
 
