@@ -23,10 +23,12 @@ function binarySearchTwoSum(array, sum){
 //returns true when a match is found
 function binaryMatch(sortedArray, missingNum){
 
+
 }
 
 
 //collects each pair of numbers with a matching sum
 function hashTwoSum(array, sum){
+
 
 }
