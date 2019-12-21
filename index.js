@@ -14,6 +14,8 @@ function bruteForceTwoSum(array, sum){
       }
     }
   }
+  lengthOfMP = matchingPairs.length;
+  
   return matchingPairs;
 }
 
