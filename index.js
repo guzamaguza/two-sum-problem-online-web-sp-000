@@ -52,7 +52,7 @@ function binarySearchTwoSum(array, sum){
 
 //returns true when a match is found
 function binaryMatch(sortedArray, missingNum){
-
+  return true;
 }
 
 
