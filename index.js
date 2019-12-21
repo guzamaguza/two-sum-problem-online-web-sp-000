@@ -24,8 +24,8 @@ function bruteForceTwoSum(array, sum){
 
 //collects each pair of numbers with a matching sum [ O(n log n) ]
 function binarySearchTwoSum(array, sum){
-  sortedArray = array.sort();
-  var mid = Math.floor(array.length / 2);
+  let sortedArray = array.sort();
+  let mid = Math.floor(array.length / 2);
     for(let i=0;i<array.length;i++){
       let numLookingFor = sum - array[i];
 
