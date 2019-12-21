@@ -4,10 +4,12 @@ function bruteForceTwoSum(array, sum){
     for(let j=0;j<array.length;j++){
 
       if(sum == array[i] + array[j]){
-        return
+        pair = [i,j];
+        matchingPairs.push(pair);
       }
     }
   }
+  return matchingpairs;
 }
 
 
