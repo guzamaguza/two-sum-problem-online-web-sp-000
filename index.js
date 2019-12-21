@@ -66,6 +66,8 @@ function hashTwoSum(array, sum){
         if (hashTable[numLookingFor.toString()] !== undefined) {
           matchingSums.push([array[i], numLookingFor]);
         }
+        // add the current number to the hash table
+        hashTable[array[i].toString()] = array[i];
     }
     return matchingSums;
 }
